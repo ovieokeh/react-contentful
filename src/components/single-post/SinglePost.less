@@ -1,0 +1,44 @@
+.post {
+  position: relative;
+
+  &__back {
+    display: block;
+    width: 100%;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background-color ease 200ms;
+    position: sticky;
+    top: 0;
+
+    &:hover {
+      background-color: #333;
+      color: #f4f4f4;
+    }
+  }
+
+  &__intro,
+  &__body {
+    padding: 0 5rem;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    max-width: 700px;
+    margin: auto;
+  }
+}
