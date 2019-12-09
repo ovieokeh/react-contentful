@@ -12,18 +12,18 @@
 
   &__post {
     color: #333;
+    background-color: #fff;
     text-decoration: none;
-    border: 1px solid #ddd;
     border-radius: 12px;
     overflow: hidden;
-    transition: opacity ease 200ms;
+    transition: box-shadow 200ms ease-in;
 
     :not(:first-child) {
       padding: 0 1rem;
     }
 
     &:hover {
-      opacity: 0.6;
+      box-shadow: 0px 2px 16px #394e5d36;
     }
 
     &__img__container {
@@ -41,8 +41,8 @@
 
     &:hover &__img__container {
       &__img {
-        transform: scale(1.2);
-        transition: transform ease-out 300ms;
+        transform: scale(1.1);
+        transition: transform ease-out 200ms;
       }
     }
   }

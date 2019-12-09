@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+  font-family: 'Nunito', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  background-color: #f3f3f3;
 }
 
 html,

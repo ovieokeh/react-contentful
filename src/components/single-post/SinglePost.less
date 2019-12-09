@@ -1,5 +1,6 @@
 .post {
   position: relative;
+  background-color: #fff;
 
   &__back {
     display: block;
@@ -20,7 +21,7 @@
 
   &__intro,
   &__body {
-    padding: 0 5rem;
+    padding: 1rem 5rem;
   }
 
   &__intro {
@@ -28,6 +29,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__desc {
+      max-width: 800px;
+    }
 
     &__img {
       width: 100%;
@@ -40,5 +45,10 @@
   &__body {
     max-width: 700px;
     margin: auto;
+
+    p {
+      font-size: 1.1rem;
+      line-height: 28px;
+    }
   }
 }
