@@ -9,12 +9,10 @@ export default function useSinglePost(slug) {
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
-    promise
-      .then(result => {
-        setPost(result[0].fields)
-        setLoading(false)
-      })
-      .catch(console.error)
+    promise.then(result => {
+      setPost(result[0].fields)
+      setLoading(false)
+    })
   }, [])
 
   return [post, isLoading]
